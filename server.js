@@ -1,7 +1,6 @@
 const app = require ("../app.js")
 
 // DEPENDENCIES
-const app = require('./app.js')
 
 // CONFIGURATION
 const PORT = 3005
