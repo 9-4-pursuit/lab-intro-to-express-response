@@ -59,3 +59,6 @@ app.get("/magic8", (req, res) => res.send(`<h1>${getMagic8Response()}</h1>`));
 
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+module.exports = app;
