@@ -1,6 +1,8 @@
 const express = require("express");
-const PORT = process.env.Port || 3003;
+const PORT = process.env.Port || 3000;
 const app = express();
+
+
 const magic8Responses = [
     "It is certain",
     "It is decidedly so",
@@ -21,12 +23,12 @@ const magic8Responses = [
     "My sources say no",
     "Outlook not so good",
     "Very doubtful"
-  
-  ]
+    
+]
 
-  function magic8Answer() {
+function magic8Answer() {
     return magic8Responses[Math.floor(Math.random()* magic8Responses.length)]
-  }
+}
 
 app.get("/terminator", (request, response) =>{
     response.send("I'll be back")
@@ -76,3 +78,5 @@ app.get("/magic8", (request, response) =>{
 app.listen(PORT, ()=>{
     console.log(`Listening for requests on port ${PORT}`)
 })
+
+module.exports = app;
