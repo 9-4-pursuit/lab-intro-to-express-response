@@ -1,8 +1,10 @@
+// DEPENDENCIES
 const express = require('express')
 
+// CONFIGURATION
 const app = express()
-const PORT = 3003
 
+// Variable for route
 const magic8Responses = [
     "It is certain",
     "It is decidedly so",
@@ -25,6 +27,7 @@ const magic8Responses = [
     "Very doubtful"
   ]
 
+// ROUTES
 app.get('/', (request, response) => {
     response.send('Hello, planet!')
 })
@@ -73,7 +76,6 @@ app.get('/magic8', (request, response) => {
     response.send(`<h1>${magic8Responses[Math.floor(Math.random() * (magic8Responses.length - 1))]}<h1>`)
 })
 
-app.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}`)
-})
+// EXPORT
+module.exports = app
 
