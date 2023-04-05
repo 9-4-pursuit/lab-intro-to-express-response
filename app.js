@@ -77,8 +77,8 @@ app.get("/homer-simpson", (request, response) => {
  })
 
 //listening for ports
-app.listen(PORT, () => {
-    console.log(`Listening for request on port ${PORT}`);
-})
+// app.listen(PORT, () => {
+//     console.log(`Listening for request on port ${PORT}`);
+// })
 
 module.exports = app
