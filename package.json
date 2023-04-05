@@ -1,10 +1,10 @@
-
 {
   "name": "lab-intro-to-express-response",
   "version": "1.0.0",
   "description": "## Getting Started",
   "main": "app.js",
   "scripts": {
+    
     "start": "nodemon app.js",
     "test": "jest"
   },
